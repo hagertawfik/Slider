@@ -1,0 +1,43 @@
+.item {
+    cursor: pointer;
+}
+
+.layer {
+    position  : absolute;
+    bottom    : -50%;
+    left      : 15px;
+    right     : 15px;
+    padding   : 10px;
+    text-align: center;
+    opacity   : 0.5;
+    transition: all 0.5s;
+}
+
+
+.item:hover .layer {
+    bottom : 15px;
+    opacity: 1;
+}
+
+#BoxContainer {
+    position: fixed;
+    top     : 0px;
+    bottom  : 0;
+    left    : 0;
+    right   : 0;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#boxInner{
+    width: 50%;
+    height: 500px;
+    background-image: url(../images/portfolio-4.jpg);
+    background-size: cover;
+}
+
+#boxInner i{
+    cursor: pointer;
+}
